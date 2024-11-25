@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tenis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #339966;
+        }
+
+        h1 {
+            color: #993300;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three images per row */
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%; /* Automatically fit each grid column */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .gallery img {
+            animation: fadeIn 1.5s ease;
+        }
+
+        .description {
+            margin: 20px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color:#fefff3;">Tennis Moments</h1>
+    <p class="description">
+        Tennis has been my favorite sport since 2018 and it’s been my favorite way to stay fit and have fun.
+    </p>
+    <div class="gallery">
+        <img src="t3.jpg" alt="Tennis Portrait 1">
+        <img src="t5.jpg" alt="Tennis Portrait 5">
+        <img src="t4.jpg" alt="Tennis Portrait 3">
+        <img src="t2.jpg" alt="Tennis Landscape 4">
+        <img src="t6.jpg" alt="Tennis Landscape 6">
+        <img src="t1.jpg" alt="Tennis Landscape 2">
+        <img src="t7.jpg" alt="Tennis Portrait 7">
+        <img src="t8.jpg" alt="Tennis Landscape 8">
+        <img src="t9.jpg" alt="Tennis Portrait 9">
+    </div>
+</body>
+</html>
