@@ -2,24 +2,27 @@
 <html>
 <head>
    <title> Resume </title>
- </head>
+   <link rel="stylesheet" type="text/css" href = "index.css"/>
+    <title>My Biodata</title>
+
+<body>
 <p>
 <center><a href="eelda1.jpg"> <img src="eelda1.jpg" width="200" height="250" <alt="gambar"> </a> </center></p>
-    <title>My Biodata</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        .container {
+    <div class="container">
+ <style>
+.container {
             max-width: 800px;
             margin: 0 auto;
             border: 2px solid #ddd;
             padding: 20px;
             border-radius: 8px;
             background-color: #f9f9f9;
+        body {
+            
+            margin: 20px;
+            line-height: 1.6;
         }
+
         h1 {
             text-align: center;
             color: #333;
@@ -39,9 +42,6 @@
             margin-bottom: 10px;
         }
     </style>
-</head>
-<body>
-    <div class="container">
 
         <div>
             <h2 class="section-title">Personal Information</h2>
@@ -57,9 +57,14 @@
         </div>
 
         <div>
-                        <h2 class="section-title">
-                <a href="education.html" style="text-decoration: none; color:blue;">Education</a>
-            </h2>
+<h2 class="section-title" style="margin-bottom: 20px; font-size: 20px;">
+    <a href="education.html" 
+       style="text-decoration: none; color: blue; transition: color 0.3s;" 
+       onmouseover="this.style.color='darkblue'; this.style.textDecoration='underline';"
+       onmouseout="this.style.color='blue'; this.style.textDecoration='none';">
+        Education
+    </a>
+</h2>
 
 <style>
 table {
@@ -81,7 +86,7 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<table>
+<table border="1" cellpadding="10">
   <tr>
     <th>Place of Education</th>
     <th>Education</th>
@@ -89,36 +94,45 @@ tr:nth-child(even) {
     <th>Year</th>
   </tr>
   <tr>
-    <td>SMK Munshi Abdullah</td>
+    <td>
+      <img src="munshilogo.jpg" alt="SMK Munshi Abdullah Logo" width="60" style="vertical-align: middle; margin-right: 10px;">
+      <span>SMK Munshi Abdullah</span>
+    </td>
     <td>SPM</td>
     <td>5A 4B</td>
     <td>2017-2022</td>
   </tr>
-  <tr>
-    <td>Mara University of Technology (UITM), Segamat</td>
-    <td>Diploma in Information Management</td>
-    <td>2022-2024</td>
-    <td>3.55</td>
-  </tr>
-
- </table>
-
+<tr>
+  <td>
+    <img src="logouitm2.png" alt="UiTM Logo" width="60" style="vertical-align: middle; margin-right: 10px;">
+    <span style="vertical-align: middle;">Mara University of Technology (UiTM), Segamat</span>
+  </td>
+  <td>Diploma in Information Management</td>
+  <td>3.55</td>
+  <td>2022-2024</td>
+</tr>
+</table>
         </div>
 
-        <div>
-            <h2 class="section-title">
-                <a href="universityactivities.html" style="text-decoration: none; color:blue;">Achievements & University Activities</a>
-            </h2>
-            <ol>
-                <li>Awarded Best Intern of the Year (2023)</li>
-                <li>Successfully led a team to complete Sukan Program 2023</li>
-                <li>Champion of the Women's Individual Tennis category in the Sukan Program (SUPRO) 2023 and Sukan Kolej (SUKOL) 2024.</li>
-                <li>Got 4th place (women's double) in tennis for Karnival Sukan Mahasiwa UITM (KARISMA) at UITM cawangan Pulau Pinang - October 2023</li>
-                <li>Won a bronze medal (mix double) in tennis for Karnival Sukan Mahasiswa UITM (KARISMA) at UITM cawangan Seremban 3 - February 2024</li>
-                <li>Appointed as designer for Baju Rasmi JSP and Colour run Jersey</li>
-                <li>Served as moderator for Majlis Syurah Parlimen Mahasiswa</li>
-            </ol>
-        </div>
+<div style="text-align: center; margin: auto; max-width: 800px;">
+<h2 class="section-title" style="margin-bottom: 20px; font-size: 20px;">
+    <a href="universityactivities.html" 
+       style="text-decoration: none; color: blue; transition: color 0.3s;" 
+       onmouseover="this.style.color='darkblue'; this.style.textDecoration='underline';"
+       onmouseout="this.style.color='blue'; this.style.textDecoration='none';">
+        Achievements & University Activities
+    </a>
+</h2>
+    <ol style="text-align: left; margin: auto;">
+        <li>Awarded Best Intern of the Year (2023)</li>
+        <li>Successfully led a team to complete Sukan Program 2023</li>
+        <li>Champion of the Women's Individual Tennis category in the Sukan Program (SUPRO) 2023 and Sukan Kolej (SUKOL) 2024.</li>
+        <li>Got 4th place (women's double) in tennis for Karnival Sukan Mahasiwa UITM (KARISMA) at UITM cawangan Pulau Pinang - October 2023</li>
+        <li>Won a bronze medal (mix double) in tennis for Karnival Sukan Mahasiswa UITM (KARISMA) at UITM cawangan Seremban 3 - February 2024</li>
+        <li>Appointed as designer for Baju Rasmi JSP and Colour run Jersey</li>
+        <li>Served as moderator for Majlis Syurah Parlimen Mahasiswa</li>
+    </ol>
+</div>
 
     <div>
         <h2 class="section-title">Skills</h2>
@@ -132,15 +146,34 @@ tr:nth-child(even) {
         </ul>
     </div>
 
-        <div>
-            <h2 class="section-title">Hobbies</h2>
-            <ul>
-                <li><a href="tenis.html" style="text-decoration: none; color:Black;">Tennis</a></li>
-                <li><a href="travel.html" style="text-decoration: none; color:Black;">Travelling</a></li>
-                <li><a href="cafehunting.html" style="text-decoration: none; color:Black;">Cafe Hunting</a></li>
-            </ul>
-        </div>
-    </div>
+        <div style="text-align: center; margin: auto; max-width: 800px; padding: 20px;">
+    <h2 class="section-title" style="margin-bottom: 20px;">Hobbies</h2>
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">
+            <a href="tenis.html" style="text-decoration: none; color: black; font-size: 16px;" 
+               onmouseover="this.style.color='blue'; this.style.textDecoration='underline';"
+               onmouseout="this.style.color='black'; this.style.textDecoration='none';">
+               Tennis
+            </a>
+        </li>
+
+        <li style="margin-bottom: 10px;">
+            <a href="travel.html" style="text-decoration: none; color: black; font-size: 16px;" 
+               onmouseover="this.style.color='blue'; this.style.textDecoration='underline';"
+               onmouseout="this.style.color='black'; this.style.textDecoration='none';">
+               Travelling
+            </a>
+        </li>
+
+        <li style="margin-bottom: 10px;">
+            <a href="cafehunting.html" style="text-decoration: none; color: black; font-size: 16px;" 
+               onmouseover="this.style.color='blue'; this.style.textDecoration='underline';"
+               onmouseout="this.style.color='black'; this.style.textDecoration='none';">
+               Cafe Hunting
+            </a>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>
